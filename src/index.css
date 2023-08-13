@@ -1,92 +1,43 @@
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  /* border: 1px solid black; */
-}
-.header{
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
-}
-  .logo{
-  width: 200px; 
-}
-.nav-item{
-  padding: 0px 20px;
-}
-.nav-item ul{
-  font-size: 24px;
-  display: flex;
-  list-style-type: none;
-}
-/* .body{
-  border: 2px solid black;
-} */
-.nav-item ul li{
-  padding: 10px;
-  margin: 10px;
- 
-}
- 
-.res-container{
-  display: flex;
-  flex-wrap: wrap;
-    
-}
- 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .res-card{
   margin: 15px;
   padding: 5px;
   width: 263px;
   height: 350px;
   /* border: 1px solid blueviolet; */
-  white-space: nowrap;
+   white-space: nowrap;
   background: rgb(234, 227, 227);
   overflow: hidden;
- 
 }
-.res-card .fix{
-  white-space: nowrap;
-}
-.res-card:hover{
-  border: 1px solid blueviolet;
-  cursor: pointer;
-}
- .search{
-  padding: 10px;
- }
- .res-card Img{
+.res-card Img{
   width: 100%;
   height: 50%;
-}
-/* button css */
-.filter-btn{
-   margin: 10px;
-   cursor: pointer;
+} 
+
+/* shimmer*/
+
+.shimmer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
 }
 
-/* shimmers-card */
-.shimmer-container{
-  display: flex;
-  flex-wrap: wrap;
-}
-.shimmers-card{
-  margin: 10px;
-  width: 250px;
-  height: 400px;
-  background-color: #f0f0f0;
+.shimmers-card {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(-90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
 
-/* login button */
-.Login{
-  padding: 0 20px;
-  cursor: pointer;
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
-.filter{
-  display: flex;
-}
- 
- 
- 
- 
