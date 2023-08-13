@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "//FoodWebsite/static/css/main.08280719.css",
-    "main.js": "//FoodWebsite/static/js/main.47701456.js",
+    "main.js": "//FoodWebsite/static/js/main.f39e1ffe.js",
     "static/js/399.35535094.chunk.js": "//FoodWebsite/static/js/399.35535094.chunk.js",
     "static/media/img1.jpg": "//FoodWebsite/static/media/img1.591e0ffe8a8b8a022160.jpg",
     "index.html": "//FoodWebsite/index.html",
     "main.08280719.css.map": "//FoodWebsite/static/css/main.08280719.css.map",
-    "main.47701456.js.map": "//FoodWebsite/static/js/main.47701456.js.map",
+    "main.f39e1ffe.js.map": "//FoodWebsite/static/js/main.f39e1ffe.js.map",
     "399.35535094.chunk.js.map": "//FoodWebsite/static/js/399.35535094.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08280719.css",
-    "static/js/main.47701456.js"
+    "static/js/main.f39e1ffe.js"
   ]
 }
