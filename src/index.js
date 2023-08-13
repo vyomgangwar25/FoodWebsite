@@ -8,7 +8,7 @@ import ContactUs from './Components/ContactUs';
 import ErrorElement from './Components/ErrorElement';
 import Cart from './Components/Cart';
 import RestaurantMenu from './Components/RestaurantMenu';
-import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom';
+import { createBrowserRouter,Navigate,Outlet,RouterProvider } from 'react-router-dom';
 
  const AboutUs=lazy(()=>import('./Components/AboutUS'))
 
@@ -51,7 +51,10 @@ const appRouter = createBrowserRouter([
         path:'/reastaurant/:resId',
         element:<RestaurantMenu/>
       },
-      
+      {
+        path: '/FoodWebsite',
+        element: <Navigate to='/'/>
+      }
     ],
     errorElement:<ErrorElement/>
   },
