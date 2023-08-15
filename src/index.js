@@ -9,15 +9,21 @@ import ErrorElement from './Components/ErrorElement';
 import Cart from './Components/Cart';
 import RestaurantMenu from './Components/RestaurantMenu';
 import { createBrowserRouter,Navigate,Outlet,RouterProvider } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import appStore from './Utils/appStore';
 
- const AboutUs=lazy(()=>import('./Components/AboutUS'))
+
+
+const AboutUs=lazy(()=>import('./Components/AboutUS'))
 
 const AppLayout=()=>{
   return(
+    <Provider store={appStore}>
     <div className='app'>
         <Header/>
         <Outlet/>
     </div>
+    </Provider>
   
   );
 }

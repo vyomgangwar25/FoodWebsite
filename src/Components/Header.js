@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import logo from '../Logo/download (1).png';
 import { Link } from 'react-router-dom';
 import UseOnlineStatus from '../Utils/UseOnlineStatus';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [btn, setBtn] = useState('Login');
 
   const onlineStatus = UseOnlineStatus(); // call custom hook
+
+  //subscribing to the store using a selector ..gives an access to store
+  const cartItems=useSelector((store)=>store.cart.items)
+  console.log(cartItems)
 
   return (
     <div className="flex justify-between bg-[#4c5262] shadow-lg py-2 px-4 mb-2">
@@ -36,7 +41,7 @@ const Header = () => {
           </li>
           <li>
             <Link className="text-white text-xl  hover:text-indigo-300 font-bold" to="/cart">
-              Cart
+              Cart ({cartItems.length}- items)
             </Link>
           </li>
           <button

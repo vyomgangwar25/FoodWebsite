@@ -3,7 +3,7 @@ import RestaurantCard from './RestaurantCard';
 import ShimmerUI from './ShimmerUI';
 import { Link } from 'react-router-dom';
 import UseOnlineStatus from '../Utils/UseOnlineStatus';
- 
+ import netoffimg from '../Logo/netoffimg.png';
 
 const Body = () => {
      //usestate hook
@@ -36,9 +36,14 @@ const Body = () => {
       if(onlineStatus === false)
       {
          return(
-           <h1>
-             Looks like you are offline !! please check internet connection
+          <div>
+            <h1 className='text-center font-bold'>
+             Looks like you are offline !! please check internet connection fast
            </h1>  
+           <img src={netoffimg} alt="" />
+
+          </div>
+          
          )
        }
 
@@ -73,7 +78,7 @@ const Body = () => {
             >
             Search</button>
          </div>  
-         <div className='search m-4 p-4 flex items-center'>
+         <div className='search m-4 p-4 flex items-center '>
          <button className='filter-btn px-4 py-2  bg-gray-100 rounded-lg'
           onClick={()=>{
             const filterdList=resObj.filter(
