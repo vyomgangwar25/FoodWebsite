@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/FoodWebsite/static/css/main.c1ef4fbd.css",
-    "main.js": "/FoodWebsite/static/js/main.dd6c3159.js",
-    "static/js/399.35535094.chunk.js": "/FoodWebsite/static/js/399.35535094.chunk.js",
-    "static/media/img1.jpg": "/FoodWebsite/static/media/img1.591e0ffe8a8b8a022160.jpg",
+    "main.css": "/FoodWebsite/static/css/main.964c7bf2.css",
+    "main.js": "/FoodWebsite/static/js/main.8bdfcde8.js",
+    "static/js/87.279a8090.chunk.js": "/FoodWebsite/static/js/87.279a8090.chunk.js",
+    "static/media/contact.jpg": "/FoodWebsite/static/media/contact.522a7f630d44eee4955d.jpg",
+    "static/media/404-error.jpg": "/FoodWebsite/static/media/404-error.44f968b5b37b520269b3.jpg",
+    "static/media/empty-cart.png": "/FoodWebsite/static/media/empty-cart.9c2fa416c5b15a2d8c4e.png",
+    "static/media/netoffimg.png": "/FoodWebsite/static/media/netoffimg.1689ae3547c6601336f6.png",
     "index.html": "/FoodWebsite/index.html",
-    "main.c1ef4fbd.css.map": "/FoodWebsite/static/css/main.c1ef4fbd.css.map",
-    "main.dd6c3159.js.map": "/FoodWebsite/static/js/main.dd6c3159.js.map",
-    "399.35535094.chunk.js.map": "/FoodWebsite/static/js/399.35535094.chunk.js.map"
+    "main.964c7bf2.css.map": "/FoodWebsite/static/css/main.964c7bf2.css.map",
+    "main.8bdfcde8.js.map": "/FoodWebsite/static/js/main.8bdfcde8.js.map",
+    "87.279a8090.chunk.js.map": "/FoodWebsite/static/js/87.279a8090.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1ef4fbd.css",
-    "static/js/main.dd6c3159.js"
+    "static/css/main.964c7bf2.css",
+    "static/js/main.8bdfcde8.js"
   ]
 }
