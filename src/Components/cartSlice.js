@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const cartSlice=createSlice({
-      name:'cart',
+const cartSlice=createSlice({     //create slice
+      name:'cart',               //name:newSlice
       initialState:{
         items:[]
       },
@@ -17,5 +17,5 @@ const cartSlice=createSlice({
         }
       }
 });
-export const{addItem,removeItem,clearCart}=cartSlice.actions;
-export default cartSlice.reducer;
+export const{addItem,removeItem,clearCart}=cartSlice.actions;   //export the actions
+export default cartSlice.reducer;      //export the slice  and now we need to configure the store

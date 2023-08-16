@@ -14,6 +14,7 @@ const Cart = () => {
      dispatch(clearCart())
   }
   return (
+     
     <div className='text-center m-4 p-4'>
     <h1 className='text-2xl font-bold'>cart</h1>
    <div className='w-6/12 m-auto'>

@@ -1,7 +1,5 @@
-import React from 'react';
-
-import aboutImage from '../Logo/img1.jpg';
-
+import React from 'react'
+ 
 const teamMembers = [
   {
     img: 'https://media.istockphoto.com/id/951132442/photo/mastering-new-culinary-heights.jpg?s=612x612&w=0&k=20&c=96kg8oMcQ1VlItWhwRI69aAO_CWiZjHvNuvNYPiE59M=',
@@ -21,27 +19,36 @@ const teamMembers = [
     role: 'Sous Chef',
     bio: 'Skilled in orchestrating seamless kitchen operations and dedicated to delivering top-notch culinary creations.',
   },
-  // Add more team members as needed
+ 
 ];
 
 const AboutUs = () => {
   return (
     <div className="about-us-wrapper p-6">
-      <div className="about-us-content mb-10">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
-        <p>
-          Welcome to Nameste-Food! We are passionate about bringing you the finest culinary experiences.
-        </p>
-        <p>Our team of dedicated chefs and food enthusiasts work tirelessly to create dishes that tantalize your taste buds and satisfy your cravings.</p>
-        <p>At Nameste-Food!, we believe that food is not just a necessity; it's an art, a culture, and a source of joy. Our mission is to provide you with exceptional dining experiences that create lasting memories.</p>
-        <p>Whether you're a fan of gourmet cuisine, comfort food, or exotic flavors, you'll find something that suits your palate on our menu.</p>
-        <p>Join us on a culinary journey and explore a world of flavors right at your fingertips.</p>
+     
         
-      </div>
-      <div className="our-team-section">
-        <h2 className="text-2xl font-bold mb-4">Our Team</h2>
+ <div className="text-center py-5">
+  <h1 className="text-3xl font-bold ">Welcome to Nameste Food!</h1>
+</div>
+  <p className="text-gray-700">
+    At <span className="font-bold">Nameste Food </span>, we have a deep passion for all things delicious. Our journey began with a simple idea: to create a platform that celebrates the artistry, culture, and flavors of the culinary world. We're more than just a food website; we're a community of food enthusiasts, chefs, home cooks, and adventurers who share a common love for exceptional cuisine.
+  </p>
+  
+  <h2 className="text-xl font-bold mt-6 mb-3 text-center">What We Offer:</h2>
+  <p className="text-gray-700">
+    <span className="text-lg font-bold">Expert Chef Insights:</span> Learn from the best! Our team of seasoned chefs and culinary experts share their insights, techniques, and trade secrets to help you elevate your cooking skills.
+  </p>
+  <p className="text-gray-700 mt-2">
+    <span className="text-lg font-bold">Engaging Food Stories:</span> Immerse yourself in the captivating stories behind your favorite dishes, ingredients, and culinary traditions.
+  </p>
+  <p className="text-gray-700 mt-2">
+    <span className="text-lg font-bold">Stunning Visuals:</span> Our vibrant photography and engaging videos capture the essence of food in its most mouthwatering form.
+  </p>
+  <div className="our-team-section">
+        <h2 className="text-2xl font-bold mb-3 mt-4 text-center">Our Team</h2>
+        <p>Our team of dedicated chefs and food enthusiasts work tirelessly to create dishes that tantalize your taste buds and satisfy your cravings.</p>
         <div className="team-members-container grid gap-6 grid-cols-1 md:grid-cols-3">
-          {teamMembers.map((member, index) => (
+            {teamMembers.map((member, index) => (
             <div className="team-member-card bg-white p-4 rounded-lg shadow-md" key={index}>
               <div className="team-member-info">
                 <h3 className="team-member-name text-xl font-semibold mb-2">{member.name}</h3>
@@ -53,7 +60,17 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
+      <h2 className="text-xl font-bold mt-6  text-center">Our Mission:</h2>
+  <p className="text-gray-700 leading-relaxed mt-3">
+    Our mission is to bring you on a gastronomic adventure that transcends borders and tantalizes your taste buds. We curate and share delectable recipes, culinary tips, and insightful articles that inspire you to explore the vibrant world of cooking and dining. Whether you're a seasoned chef or a kitchen novice, we're here to ignite your culinary creativity and help you discover new flavors.
+  </p>
+  <h2 className="text-xl font-bold mt-6 mb-3 text-center">Join Us:</h2>
+  <p className=" text-gray-700 leading-relaxed mt-3">
+    Come join us on this delectable journey! Whether you're looking for mouthwatering recipes, culinary inspiration, or a community of fellow food enthusiasts, <span className="font-bold">Nameste Food</span> has something for you. Let's explore, create, and savor the magic of food together.
+  </p>
+ 
     </div>
+   
   );
 };
 

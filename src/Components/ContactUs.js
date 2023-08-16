@@ -1,14 +1,11 @@
 import React from 'react';
 import img from '../Logo/contact.jpg';
+import Footer from './Footer';
 
 const ContactUs = () => {
   return (
     <div className="bg-gray-100 min-h-screen ">
-      {/* <nav className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto">
-          <a href="#" className="text-xl font-semibold">Foodie Delights</a>
-        </div>
-      </nav> */}
+    
 
       <div className="container mx-auto flex justify-between my-8 p-8 bg-white shadow-md rounded-lg">
         <div className="w-2/3 pr-8">
@@ -22,7 +19,7 @@ const ContactUs = () => {
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-              <input type="email" id="email" name="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+              <input type="email" id="email"  name="email" className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-black-300 rounded-md" />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
@@ -39,12 +36,7 @@ const ContactUs = () => {
           <img src={img} alt="" className="h-full object-cover rounded-lg" />
         </div>
       </div>
-
-      <footer className="bg-gray-800 flex-grow text-white text-center py-4  fixed  inset-x-0
-             bottom-0
-             p-4">
-        <p>&copy; 2023 Foodie Delights. All rights reserved.</p>
-      </footer>
+        <Footer/>
     </div>
   );
 }

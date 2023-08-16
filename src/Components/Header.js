@@ -3,15 +3,17 @@ import logo from '../Logo/download (1).png';
 import { Link } from 'react-router-dom';
 import UseOnlineStatus from '../Utils/UseOnlineStatus';
 import { useSelector } from 'react-redux';
+import { FaCartPlus } from 'react-icons/fa6';
+ 
+
 
 const Header = () => {
   const [btn, setBtn] = useState('Login');
 
   const onlineStatus = UseOnlineStatus(); // call custom hook
 
-  //subscribing to the store using a selector ..gives an access to store
-  const cartItems=useSelector((store)=>store.cart.items)
-  console.log(cartItems)
+  // Subscribing to the store using a selector gives access to the cart items
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="flex justify-between bg-[#4c5262] shadow-lg py-2 px-4 mb-2">
@@ -19,11 +21,10 @@ const Header = () => {
         <img className="w-40" src={logo} alt="" />
       </div>
       <div className="flex items-center">
-   
-        <ul className="flex space-x-4">
-        <li className="text-white text-xl font-bold" >
-        Online Status: {onlineStatus ? <span className="text-green-500">🟢</span> : <span className="text-red-500">🔴</span>}
-             </li>
+        <ul className="flex space-x-6">
+          <li className="text-white text-xl font-bold">
+            Online Status: {onlineStatus ? <span className="text-green-500">🟢</span> : <span className="text-red-500">🔴</span>}
+          </li>
           <li>
             <Link className="text-white text-xl hover:text-indigo-300 font-bold" to="/">
               Home
@@ -40,8 +41,13 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className="text-white text-xl  hover:text-indigo-300 font-bold" to="/cart">
-              Cart ({cartItems.length}- items)
+            <Link className="text-white text-l hover:text-indigo-300 font-bold" to="/cart">
+              <span className="relative inline-block">
+                <FaCartPlus className="text-2xl" />
+                <span className="bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center absolute -top-1 -right-1">
+                  {cartItems.length}
+                </span>
+              </span>
             </Link>
           </li>
           <button
@@ -56,6 +62,7 @@ const Header = () => {
           </button>
         </ul>
       </div>
+    
     </div>
   );
 };

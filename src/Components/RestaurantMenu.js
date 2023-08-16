@@ -1,8 +1,7 @@
 import React from 'react'
 import {useState, useEffect } from 'react';
 import ShimmerUI from './ShimmerUI';
-import ResmenuCard from './ResmenuCard';
- import ResMenuCategory from './ResMenuCategory';
+import ResMenuCategory from './ResMenuCategory';
 
 const RestaurantMenu = () => {
    const[resInfo,setresInfo]=useState(null);
@@ -15,7 +14,7 @@ const RestaurantMenu = () => {
         );
         const json=await data.json();
         
-        console.log(json);
+      //  console.log(json);
         setresInfo(json.data);
     };
     
@@ -23,7 +22,7 @@ const RestaurantMenu = () => {
 
     const{name,cuisines,costForTwoMessage}=resInfo?.cards[0]?.card?.card?.info;
 
-     const itemCard = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2].card.card.categories[1].itemCards;
+    // const itemCard = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2].card.card.categories[1].itemCards;
      // console.log(resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
     const categories=resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
         (c)=>
