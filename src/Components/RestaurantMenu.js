@@ -14,7 +14,7 @@ const RestaurantMenu = () => {
         );
         const json=await data.json();
         
-      //  console.log(json);
+       //console.log(json);
         setresInfo(json.data);
     };
     
@@ -36,7 +36,7 @@ const RestaurantMenu = () => {
      <h1 className='font-bold my-6 text-2xl'>{name}</h1>
      <p className='font-bold text-xl'>{cuisines.join(",")}-{costForTwoMessage}</p>
        {/*Category accordian */}
-       {categories.map((category)=>{
+       {categories.map((category)=> {
        return <ResMenuCategory  data={category?.card?.card}/>
        })}
     </div>

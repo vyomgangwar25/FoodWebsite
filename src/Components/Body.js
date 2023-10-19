@@ -68,7 +68,7 @@ const Body = () => {
              />
             <button className='px-4 py-2 bg-black text-white m-4 rounded-lg hover:bg-blue-500 hover:text-white' 
                onClick={()=>{              //search button
-                console.log(searchText);
+                //console.log(searchText);
           const filterdReasaurant= resObj.filter(
             (res) => res.info.name.toLowerCase().includes(searchText.toLowerCase())
                  );

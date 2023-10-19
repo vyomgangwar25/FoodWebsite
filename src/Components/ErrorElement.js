@@ -2,8 +2,8 @@ import { useRouteError } from 'react-router-dom'
 import React from 'react'
 import notfound from '../Logo/404-error.jpg'
 const ErrorElement = () => {
-    const err=useRouteError();  //it give details of error as a object
-    console.log(err);
+    const err=useRouteError();  //it give details of error in a object
+    //console.log(err);
   return (
     
     <div className='text-3xl font-bold text-center mt-10 pt-7'>
